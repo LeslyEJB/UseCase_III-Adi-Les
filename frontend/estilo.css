@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(10, 90px); 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.galeria-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.galeria-etiqueta {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+.galeria-item:hover .imagen-galeria {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.imagen-galeria {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#carga-archivo {
+    display: none;
+}
+
+.boton-subida {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.boton-subida:hover {
+    background-color: #0056b3;
+}
+
+.vista-previa {
+    width: 100%; 
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagen-a-predecir {
+    max-width: 50%;
+    max-height: 300px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    display: none;
+}
+
+#boton-predecir {
+    display: none;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-predecir:hover {
+    background-color: #218838;
+}
+
+#resultado {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    min-height: 25px;
+}

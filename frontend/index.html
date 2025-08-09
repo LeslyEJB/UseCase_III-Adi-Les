@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción con Modelo</title>
+    <link rel="stylesheet" href="frontend/estilo.css">
+</head>
+<body>
+
+    <main>
+        <h1>Realiza una Predicción</h1>
+        <p>Selecciona una imagen de la galería</p>
+
+        <h2>Galería</h2>
+        <div class="galeria">
+            <div class="galeria">
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0070.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0071.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0072.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0073.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0074.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0075.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0076.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0077.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0078.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-gl_0079.jpg" alt="Imagen de Glioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Glioma</p>
+        </div>
+
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0247.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0248.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0249.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0250.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0251.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0252.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0253.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0254.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0255.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-me_0256.jpg" alt="Imagen de Meningioma" class="imagen-galeria">
+            <p class="galeria-etiqueta">Meningioma</p>
+        </div>
+
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0177.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0178.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0179.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0180.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0181.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0182.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0183.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0184.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0185.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-no_0186.jpg" alt="Imagen de No Tumor" class="imagen-galeria">
+            <p class="galeria-etiqueta">No Tumor</p>
+        </div>
+
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0259.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0260.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0261.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0262.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0263.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0264.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0265.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0266.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0267.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+        <div class="galeria-item">
+            <img src="frontend/imagenes_para_predecir/Te-pi_0268.jpg" alt="Imagen de Pituitary" class="imagen-galeria">
+            <p class="galeria-etiqueta">Pituitary</p>
+        </div>
+    </div>
+        </div>
+
+        <label for="carga-archivo" class="boton-subida">
+            Subir imagen ⬆️
+        </label>
+        <input type="file" id="carga-archivo" accept="image/*">
+
+        <div class="vista-previa">
+            <h2>Imagen seleccionada</h2>
+            <img id="imagen-a-predecir" src="#" alt="Vista previa de la imagen a predecir">
+            <button id="boton-predecir">Predecir</button>
+            <p id="resultado">Resultado</p>
+        </div>
+    </main>
+
+    <script src="frontend/script.js"></script>
+</body>
+</html>
